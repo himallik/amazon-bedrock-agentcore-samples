@@ -32,6 +32,10 @@ aws cognito-idp create-user-pool-client \
   --client-name "DemoClient" \
   --no-generate-secret \
   --explicit-auth-flows "ALLOW_USER_PASSWORD_AUTH" "ALLOW_REFRESH_TOKEN_AUTH" \
+  --token-validity-units AccessToken=hours,IdToken=hours,RefreshToken=days \
+  --access-token-validity 2 \
+  --id-token-validity 2 \
+  --refresh-token-validity 1 \
   --region "$REGION" \
   > client.json
 

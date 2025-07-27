@@ -1,7 +1,0 @@
-bedrock-agentcore-sdk
-langgraph
-langchain
-langchain_aws
-typing_extensions
-langchain_community
-nova_act
