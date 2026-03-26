@@ -39,3 +39,6 @@ response.json
 .dockerignore
 agent_runtime/
 Dockerfile
+
+# Draw.io source files (keep locally, not for PR)
+*.drawio
